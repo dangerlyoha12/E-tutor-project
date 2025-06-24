@@ -17,21 +17,21 @@ main {
 body::-webkit-scrollbar {
 	display: none;
 }
-.navber {
+.navbar {
 	background-color: black;
 }
-.navber__content {
+.navbar__content {
 	color: rgba(161, 165, 179, 1);
 	display: flex;
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
 }
-.navber__content > div:nth-child(1) {
+.navbar__content > div:nth-child(1) {
 	display: flex;
 	gap: 8px;
 }
-.navber__content a {
+.navbar__content a {
 	text-decoration: none;
 	color: rgba(161, 165, 179, 1);
 	padding: 16px 16px;
@@ -41,11 +41,11 @@ body::-webkit-scrollbar {
 	line-height: 20px;
 	letter-spacing: -1%;
 }
-.navber__content a:hover {
+.navbar__content a:hover {
 	color: white;
 	box-shadow: 0 2px 0 rgba(255, 102, 54, 1) inset;
 }
-.navber__content > div:nth-child(2) {
+.navbar__content > div:nth-child(2) {
 	font-family: Inter;
 	font-weight: 400;
 	font-size: 14px;
@@ -53,7 +53,7 @@ body::-webkit-scrollbar {
 	letter-spacing: -1%;
 	padding: 15px 0;
 }
-.navber__content > div:nth-child(2) > span:nth-child(3) {
+.navbar__content > div:nth-child(2) > span:nth-child(3) {
 	padding-left: 24px;
 }
 .logo {
@@ -203,7 +203,7 @@ body::-webkit-scrollbar {
 	line-height: 48px;
 	letter-spacing: -1%;
 	text-align: center;
-	padding: 80px 0 40px 0;
+	padding: 80px 0 0 0;
 }
 .browse__content {
 	display: grid;
@@ -212,8 +212,9 @@ body::-webkit-scrollbar {
 	gap: 24px;
 	width: 100%;
 	justify-content: center;
+	margin-top: 40px;
 }
-.browse__content h1 {
+.browse__content > div p:first-child {
 	font-family: Inter;
 	font-weight: 500;
 	font-size: 16px;
@@ -222,7 +223,7 @@ body::-webkit-scrollbar {
 	padding-bottom: 8px;
 	color: rgba(29, 32, 38, 1);
 }
-.browse__content p {
+.browse__content > div p:last-child {
 	font-family: Inter;
 	font-weight: 400;
 	font-size: 14px;
