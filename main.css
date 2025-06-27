@@ -420,7 +420,7 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 }
 .our-courses {
 	background-color: white;
-	height: 360px;
+	height: 47vh; /* 360px */
 	display: flex;
 }
 .our-courses__content {
@@ -612,4 +612,10 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 .our-courses__rating > div img {
 	width: 20px;
 	height: 20px;
+}
+.recently-courses > h2 {
+	padding: 80px 0 40px 0;
+}
+.container1 {
+	@extend .container;
 }
