@@ -25,6 +25,27 @@ h2 {
 	letter-spacing: -1%;
 	text-align: center;
 }
+p {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: 0%;
+}
+span {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -1%;
+}
+a {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -1%;
+}
 .navbar {
 	background-color: black;
 }
@@ -54,11 +75,6 @@ h2 {
 	box-shadow: 0 2px 0 rgba(255, 102, 54, 1) inset;
 }
 .navbar__content > div:nth-child(2) {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: -1%;
 	padding: 15px 0;
 }
 .navbar__content > div:nth-child(2) > span:nth-child(3) {
@@ -184,11 +200,8 @@ h2 {
 	letter-spacing: -2%;
 }
 .welcome-block__content > p {
-	font-family: Inter;
-	font-weight: 400;
 	font-size: 24px;
 	line-height: 32px;
-	letter-spacing: 0%;
 	color: rgba(78, 85, 102, 1);
 }
 .welcome-block__content > button {
@@ -207,7 +220,7 @@ h2 {
 .browse > h2 {
 	padding: 80px 0 0 0;
 }
-.browse__content {
+.browse ul {
 	display: grid;
 	grid-template-columns: 312px 312px 312px 312px;
 	grid-template-rows: 104px 104px 104px;
@@ -216,30 +229,25 @@ h2 {
 	justify-content: center;
 	margin-top: 40px;
 }
-.browse__content > div p:first-child {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 22px;
-	letter-spacing: 0%;
+.browse ul li > div p:first-child {
+	letter-spacing: -1%;
 	padding-bottom: 8px;
 	color: rgba(29, 32, 38, 1);
 }
-.browse__content > div p:last-child {
-	font-family: Inter;
+.browse ul li > div p:last-child {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 22px;
 	letter-spacing: -1%;
 	color: rgba(110, 116, 133, 1);
 }
-.browse__content__info {
+.browse ul li {
 	display: flex;
 }
-.browse__content__info:hover {
+.browse ul li:hover {
 	box-shadow: 0 12px 32px 0 rgba(29, 32, 38, 0.1);
 }
-.browse__content__info > div:first-child {
+.browse ul li > div:first-child {
 	display: flex;
 	margin: 20px 0 0 20px;
 	height: 64px;
@@ -247,34 +255,34 @@ h2 {
 	padding: 16px 16px;
 	background-color: white;
 }
-.browse__content__info:nth-child(5) > div:first-child {
+.browse ul li:nth-child(5) > div:first-child {
 	background-color: rgba(255, 102, 54, 1);
 }
-.browse__content__info > div:last-child {
+.browse ul li > div:last-child {
 	margin: 26px 0 0 20px;
 }
-.browse__content__info:first-child,
-.browse__content__info:nth-child(7) {
+.browse ul li:first-child,
+.browse ul li:nth-child(7) {
 	background-color: rgba(235, 235, 255, 1);
 }
-.browse__content__info:nth-child(2),
-.browse__content__info:nth-child(11) {
+.browse ul li:nth-child(2),
+.browse ul li:nth-child(11) {
 	background-color: rgba(225, 247, 227, 1);
 }
-.browse__content__info:nth-child(3),
-.browse__content__info:nth-child(9),
-.browse__content > .browse__content__info:last-child {
+.browse ul li:nth-child(3),
+.browse ul li:nth-child(9),
+.browse ul li:last-child {
 	background-color: rgba(255, 242, 229, 1);
 }
-.browse__content__info:nth-child(4),
-.browse__content__info:nth-child(10) {
+.browse ul li:nth-child(4),
+.browse ul li:nth-child(10) {
 	background-color: rgba(255, 240, 240, 1);
 }
-.browse__content__info:nth-child(5) {
+.browse ul li:nth-child(5) {
 	background-color: rgba(255, 255, 255, 1);
 }
-.browse__content__info:nth-child(6),
-.browse__content__info:nth-child(8) {
+.browse ul li:nth-child(6),
+.browse ul li:nth-child(8) {
 	background-color: rgba(245, 247, 250, 1);
 }
 .browse__content__last-child {
@@ -289,31 +297,24 @@ h2 {
 .browse__content__last-child__info div {
 	display: flex;
 }
-.browse__content__last-child__info div a {
+.browse__content__last-child__info div > a {
 	color: rgba(255, 102, 54, 1);
 	text-decoration: none;
 	margin: 0 0 0 12px;
 	padding-top: 5px;
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: -1%;
 	text-align: center;
 	width: 79px;
 }
 .browse__content__last-child > div p {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
-	letter-spacing: -1%;
 	text-align: center;
 	color: rgba(78, 85, 102, 1);
 	padding: 5px 0 5px 0;
 }
 .browse__content__last-child__info div img {
-	padding-left: 8px;
+	margin-left: 8px;
+	width: 24px;
+	height: 24px;
+	margin-top: 4px;
 }
 .selling-courses {
 	background-color: rgba(245, 247, 250, 1);
@@ -343,11 +344,8 @@ h2 {
 	background-color: white;
 }
 .container > ul li p {
-	font-family: Inter;
-	font-weight: 500;
 	font-size: 14px;
 	line-height: 20px;
-	letter-spacing: -1%;
 }
 .container > ul li > img {
 	width: 100%;
@@ -424,7 +422,7 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	display: flex;
 }
 .our-courses__content {
-	width: 95%;
+	width: 90%;
 	position: absolute;
 	top: 2296px;
 	left: 0;
@@ -441,10 +439,6 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	padding: 40px 0;
 }
 .our-courses__content div p {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
 	letter-spacing: -1%;
 	color: rgba(78, 85, 102, 1);
 }
@@ -505,8 +499,6 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	display: flex;
 }
 .our-courses__info__title div:last-child p:first-child {
-	font-family: Inter;
-	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	letter-spacing: -1.5%;
@@ -516,11 +508,8 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	background-color: rgba(225, 247, 227, 1);
 }
 .our-courses__info__title div:first-child p {
-	font-family: Inter;
-	font-weight: 500;
 	font-size: 10px;
 	line-height: 12px;
-	letter-spacing: 0px;
 	text-transform: uppercase;
 	color: rgba(21, 113, 31, 1);
 	padding: 4px 6px;
@@ -528,23 +517,13 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 }
 .our-courses__info__title div:last-child p:last-child {
 	padding-left: 5px;
-	font-family: Inter;
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
-	letter-spacing: 0%;
 	text-decoration: line-through;
 	color: #c5c9d1;
 }
 .our-courses__info > div:nth-child(2) {
 	width: 100%;
-}
-.our-courses__info > div:nth-child(2) p {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 22px;
-	letter-spacing: 0%;
 }
 .our-courses__info__profile,
 .our-courses__info__profile > div {
@@ -562,19 +541,8 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	display: flex;
 }
 .our-courses__info__profile > div:nth-child(1) p {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
 	letter-spacing: -1%;
 	padding-top: 3px;
-}
-.our-courses__info__profile > div:nth-child(2) span {
-	font-family: Inter;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 20px;
-	letter-spacing: -1%;
 }
 .our-courses__info__profile > div:nth-child(2) span:last-child {
 	padding-left: 5px;
@@ -599,10 +567,6 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	justify-content: space-around;
 }
 .our-courses__rating > div p {
-	font-family: Inter;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 22px;
 	letter-spacing: -1%;
 	padding-left: 6px;
 }
@@ -616,6 +580,34 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 .recently-courses > h2 {
 	padding: 80px 0 40px 0;
 }
-.container1 {
-	@extend .container;
+.recently__courses {
+	width: 80%;
+	margin: 0 auto;
+	padding-bottom: 320px;
+}
+.recently__courses > ul {
+	padding: none;
+	margin: none;
+	grid-template-columns: 20% 20% 20% 20%;
+	display: grid;
+	list-style-type: none;
+	justify-content: center;
+	gap: 25px;
+}
+.recently__courses > ul li {
+	width: auto;
+	height: 100%;
+	display: inline-block;
+	background-color: white;
+}
+.recently__courses > ul li p {
+	font-size: 14px;
+	line-height: 20px;
+}
+.recently__courses > ul li > img {
+	width: 100%;
+	max-height: 100%;
+}
+.recently__courses > ul li hr {
+	margin-top: 14px;
 }
