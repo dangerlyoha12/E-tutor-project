@@ -17,6 +17,13 @@ main {
 body::-webkit-scrollbar {
 	display: none;
 }
+h1 {
+	font-family: Inter;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 12px;
+	letter-spacing: 0px;
+}
 h2 {
 	font-family: Inter;
 	font-weight: 600;
@@ -577,13 +584,16 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	width: 20px;
 	height: 20px;
 }
+.recently-courses {
+	position: relative;
+}
 .recently-courses > h2 {
 	padding: 80px 0 40px 0;
 }
 .recently__courses {
 	width: 80%;
 	margin: 0 auto;
-	padding-bottom: 320px;
+	padding-bottom: 40px;
 }
 .recently__courses > ul {
 	padding: none;
@@ -599,6 +609,7 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 	height: 100%;
 	display: inline-block;
 	background-color: white;
+	border: 1px solid rgba(233, 234, 240, 1);
 }
 .recently__courses > ul li p {
 	font-size: 14px;
@@ -610,4 +621,240 @@ ul li:nth-child(10) .selling-courses__info:nth-child(2) p:first-child {
 }
 .recently__courses > ul li hr {
 	margin-top: 14px;
+}
+.hover-block {
+	width: 30%;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 1);
+	outline: 1px solid rgba(233, 234, 240, 1);
+	visibility: hidden;
+	position: absolute;
+	top: 29px;
+	left: 1026px;
+}
+.hover-block hr {
+	margin: 20px 0;
+	color: rgba(233, 234, 240, 1);
+}
+.hover-block__content {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0 0;
+}
+.hover-block__content > div:first-child {
+	background-color: rgba(235, 235, 255, 1);
+	width: fit-content;
+	margin: 0 0 10px 0;
+}
+.hover-block__content > div:first-child p {
+	color: rgba(52, 47, 152, 1);
+	font-weight: 500;
+	font-size: 10px;
+	line-height: 12px;
+	text-transform: uppercase;
+	padding: 4px 6px;
+}
+.hover-block__content > div:nth-child(2) p {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 20px 0;
+}
+.hover-block__info,
+.hover-block__info__profile,
+.hover-block__info__star {
+	display: flex;
+}
+.hover-block__info {
+	justify-content: space-between;
+}
+.hover-block__info__profile div > img {
+	width: 48px;
+	height: 48px;
+}
+.hover-block__info__profile div:nth-child(2) {
+	padding: 2px 0 2px 12px;
+}
+.hover-block__info__profile div:nth-child(2) p:first-child {
+	color: rgba(140, 148, 163, 1);
+	letter-spacing: -1%;
+}
+.hover-block__info__profile div:nth-child(2) p:last-child {
+	letter-spacing: -1%;
+}
+.hover-block__info__star {
+	padding: 13px 0;
+}
+.hover-block__info__star > span:nth-child(2) {
+	padding: 0 3px 0 6px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0%;
+}
+.hover-block__info__star > span:nth-child(3) {
+	color: rgba(110, 116, 133, 1);
+	font-weight: 400;
+	line-height: 22px;
+}
+.hover-block__info__star > img {
+	width: 20px;
+	height: 20px;
+}
+.hover-block__rating,
+.hover-block__rating div {
+	display: flex;
+}
+.hover-block__rating {
+	justify-content: space-between;
+	margin: 20px 0 0 0;
+}
+.hover-block__rating div p {
+	color: rgba(78, 85, 102, 1);
+	letter-spacing: -1%;
+	padding-left: 6px;
+}
+.hover-block__rating div:first-child p:first-child {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 20px;
+}
+.hover-block__rating div:first-child p:first-child span {
+	font-family: Inter;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 22px;
+	letter-spacing: -1%;
+}
+.hover-block__price {
+	justify-content: space-between;
+	display: flex;
+	margin: 20px 0 0 0;
+}
+.hover-block__price > div:first-child {
+	padding: 8px 0;
+	display: flex;
+}
+.hover-block__price > div:first-child > p:first-child {
+	font-size: 24px;
+	line-height: 32px;
+}
+.hover-block__price > div:first-child > span {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0%;
+	text-decoration: line-through;
+	color: rgba(140, 148, 163, 1);
+	padding: 4px 0 4px 4px;
+}
+.hover-block__price > div:first-child div {
+	margin-left: 10px;
+	background-color: rgba(255, 238, 232, 1);
+}
+.hover-block__price > div:first-child div p {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 100%;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	padding: 8px 12px;
+	color: rgba(255, 102, 54, 1);
+}
+.hover-block__price > div:last-child {
+	background-color: rgba(255, 238, 232, 1);
+}
+.hover-block__price > div:last-child div {
+	padding: 12px;
+}
+.hover-block__content__achievement {
+	width: 90%;
+	margin: 0 auto;
+}
+.hover-block__content__achievement__info h1 {
+	text-transform: uppercase;
+	padding-bottom: 8px;
+}
+.hover-block__content__achievement__info ul {
+	list-style-type: none;
+}
+.hover-block__content__achievement__info ul li {
+	display: flex;
+	padding-bottom: 8px;
+}
+.hover-block__content__achievement__info ul li:last-child {
+	padding: 0;
+}
+.hover-block__content__achievement__info ul li img {
+	width: 24px;
+	height: 24px;
+}
+.hover-block__content__achievement__info ul li p {
+	padding-left: 8px;
+	letter-spacing: -1%;
+	color: rgba(110, 116, 133, 1);
+}
+.hover-block__content__button {
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 42px;
+}
+.hover-block__content__button > div a {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 48px;
+	letter-spacing: -0.8%;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+.hover-block__content__button > div:first-child a {
+	padding-left: 12px;
+	color: white;
+}
+.hover-block__content__button > div:first-child {
+	background-color: rgba(255, 102, 54, 1);
+	margin-bottom: 12px;
+	display: flex;
+	justify-content: center;
+}
+.hover-block__content__button > div:first-child div {
+	padding: 12px 0;
+}
+.hover-block__content__button > div:last-child {
+	background-color: rgba(255, 238, 232, 1);
+	text-align: center;
+}
+.hover-block__content__button > div:last-child a {
+	color: rgba(255, 102, 54, 1);
+}
+.recently__courses ul:hover + .hover-block {
+	visibility: visible;
+	opacity: 1;
+}
+.hover-block:hover {
+	visibility: visible;
+	opacity: 1;
+}
+.hover-block__content__last-child {
+	background-color: rgba(255, 238, 232, 1);
+	display: flex;
+	width: fit-content;
+	margin: 0 auto;
+}
+.hover-block__content__last-child a {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 48px;
+	letter-spacing: -0.8%;
+	text-transform: capitalize;
+	padding-left: 24px;
+	color: rgba(255, 102, 54, 1);
+	text-decoration: none;
+}
+.hover-block__content__last-child div img {
+	width: 24px;
+	height: 24px;
+}
+.hover-block__content__last-child div {
+	padding: 12px 24px;
 }
